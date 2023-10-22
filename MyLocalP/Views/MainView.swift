@@ -17,7 +17,7 @@ struct MainView: View {
                 Text("Local network IP")
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .foregroundColor(.secondary)
-                Text(vm.ipAddress).foregroundColor(.white)
+                Text(vm.ipAddress).foregroundColor(.primary)
                     .frame(maxWidth: .infinity, alignment: .trailing)
             }.frame(maxWidth: .infinity)
             Divider()
