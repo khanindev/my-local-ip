@@ -19,6 +19,7 @@ struct MainView: View {
                     .foregroundColor(.secondary)
                 Text(vm.ipAddress).foregroundColor(.primary)
                     .frame(maxWidth: .infinity, alignment: .trailing)
+                    .fontWeight(.bold)
             }.frame(maxWidth: .infinity)
             Divider()
             Button { vm.handleCopyClick() } label: {
