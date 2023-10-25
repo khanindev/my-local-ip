@@ -11,6 +11,7 @@
 		591A6C232AE58D8500854A5A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591A6C222AE58D8500854A5A /* MainView.swift */; };
 		591A6C252AE58D8600854A5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 591A6C242AE58D8600854A5A /* Assets.xcassets */; };
 		591A6C282AE58D8600854A5A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 591A6C272AE58D8600854A5A /* Preview Assets.xcassets */; };
+		599DF1132AE7302100953BF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599DF1122AE7302100953BF4 /* AppDelegate.swift */; };
 		59D931B22AE5924B00886FC5 /* copyToClipboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D931B12AE5924B00886FC5 /* copyToClipboard.swift */; };
 		59D931B42AE5927700886FC5 /* getIPAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D931B32AE5927700886FC5 /* getIPAddress.swift */; };
 		59D931B72AE592C900886FC5 /* ContentViewVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D931B62AE592C900886FC5 /* ContentViewVM.swift */; };
@@ -23,6 +24,7 @@
 		591A6C242AE58D8600854A5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		591A6C272AE58D8600854A5A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		591A6C292AE58D8600854A5A /* MyLocalP.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyLocalP.entitlements; sourceTree = "<group>"; };
+		599DF1122AE7302100953BF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59D931B12AE5924B00886FC5 /* copyToClipboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = copyToClipboard.swift; sourceTree = "<group>"; };
 		59D931B32AE5927700886FC5 /* getIPAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getIPAddress.swift; sourceTree = "<group>"; };
 		59D931B62AE592C900886FC5 /* ContentViewVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewVM.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				59D931B82AE5936100886FC5 /* Views */,
 				59D931B52AE592B200886FC5 /* ViewModels */,
 				591A6C202AE58D8500854A5A /* MyLocalPApp.swift */,
+				599DF1122AE7302100953BF4 /* AppDelegate.swift */,
 				591A6C242AE58D8600854A5A /* Assets.xcassets */,
 				591A6C292AE58D8600854A5A /* MyLocalP.entitlements */,
 				591A6C262AE58D8600854A5A /* Preview Content */,
@@ -172,6 +175,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				599DF1132AE7302100953BF4 /* AppDelegate.swift in Sources */,
 				59D931B42AE5927700886FC5 /* getIPAddress.swift in Sources */,
 				591A6C232AE58D8500854A5A /* MainView.swift in Sources */,
 				59D931B72AE592C900886FC5 /* ContentViewVM.swift in Sources */,
