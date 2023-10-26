@@ -9,7 +9,7 @@ import SwiftUI
 
 
 struct MainView: View {
-    @StateObject private var vm = ContentViewVM()
+    @ObservedObject var vm = ContentViewVM()
     
     var body: some View {
         VStack {
@@ -28,7 +28,9 @@ struct MainView: View {
             }.frame(maxWidth: .infinity).buttonStyle(.borderless)
                 .tint(.primary)
         }
-        .padding()
+        .padding().onAppear(perform: {
+            let connector = NetworkConenctionStatus(handleSatisfied: vm.setIpAddress, handleDisconnect: vm.clearIpAddress)
+        })
     }
 }
 

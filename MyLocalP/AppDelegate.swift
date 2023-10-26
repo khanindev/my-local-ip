@@ -14,7 +14,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     var popover: NSPopover!
     
     var statusBarItem: NSStatusItem!
-    
+
     func applicationDidFinishLaunching(_ notification: Notification) {
         
         // Close others window`s
@@ -55,7 +55,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             button.action = #selector(statusItemClick(sender:))
             button.sendAction(on: [.leftMouseUp, .rightMouseUp])
         }
-         
     }
     
     @objc func statusItemClick(sender: NSStatusItem) {
@@ -75,4 +74,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     @objc func addToAutoRun() {
     }
+    
+    
 }

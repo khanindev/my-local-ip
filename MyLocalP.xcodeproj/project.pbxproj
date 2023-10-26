@@ -25,6 +25,7 @@
 		591A6C272AE58D8600854A5A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		591A6C292AE58D8600854A5A /* MyLocalP.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyLocalP.entitlements; sourceTree = "<group>"; };
 		599DF1122AE7302100953BF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		59BC19E32AEAFA36002809D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		59D931B12AE5924B00886FC5 /* copyToClipboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = copyToClipboard.swift; sourceTree = "<group>"; };
 		59D931B32AE5927700886FC5 /* getIPAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getIPAddress.swift; sourceTree = "<group>"; };
 		59D931B62AE592C900886FC5 /* ContentViewVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewVM.swift; sourceTree = "<group>"; };
@@ -60,6 +61,7 @@
 		591A6C1F2AE58D8500854A5A /* MyLocalP */ = {
 			isa = PBXGroup;
 			children = (
+				59BC19E32AEAFA36002809D5 /* Info.plist */,
 				59D931B02AE5923000886FC5 /* Utils */,
 				59D931B82AE5936100886FC5 /* Views */,
 				59D931B52AE592B200886FC5 /* ViewModels */,
@@ -314,6 +316,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyLocalP/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -343,6 +347,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyLocalP/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;

@@ -7,10 +7,30 @@
 
 import SwiftUI
 import Foundation
+import Network
 import AppKit
 
+class NetworkConenctionStatus {
+    private var monitor: NWPathMonitor!
+
+    init(handleSatisfied: @escaping () -> Void, handleDisconnect: @escaping () -> Void) {
+        self.monitor = NWPathMonitor()
+        
+        monitor.pathUpdateHandler = { path in
+            if path.status == .satisfied {
+                handleSatisfied()
+            } else {
+                handleDisconnect()
+            }
+        }
+        
+        let queue = DispatchQueue(label: "Monitor")
+        monitor.start(queue: queue)
+    }
+}
+
 class ContentViewVM: ObservableObject {
-    let ipAddress: String = getIPAddress()
+    @Published var ipAddress: String = "";
     var isShowingCopyPopover = true;
     
     func showPopover() -> Void {
@@ -22,6 +42,20 @@ class ContentViewVM: ObservableObject {
     
     func handleCopyClick() -> Void {
         copyToClipboard(text: self.ipAddress)
+    }
+    
+    func setIpAddress() -> Void {
+        DispatchQueue.main.async {
+            debugPrint("Set ip")
+            self.ipAddress =  getIPAddress()
+        }
+    }
+    
+    func clearIpAddress() -> Void {
+        DispatchQueue.main.async {
+            debugPrint("Clear ip")
+            self.ipAddress = "Not connected"
+        }
     }
     
     func handleCloseClick() -> Void {
