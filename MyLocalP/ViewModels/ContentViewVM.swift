@@ -46,14 +46,12 @@ class ContentViewVM: ObservableObject {
     
     func setIpAddress() -> Void {
         DispatchQueue.main.async {
-            debugPrint("Set ip")
             self.ipAddress =  getIPAddress()
         }
     }
     
     func clearIpAddress() -> Void {
         DispatchQueue.main.async {
-            debugPrint("Clear ip")
             self.ipAddress = "Not connected"
         }
     }
